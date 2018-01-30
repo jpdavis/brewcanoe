@@ -1,6 +1,13 @@
 body {
     background-color: #000;
 }
+	
+img {
+	z-index: 2;
+	float: center;
+	max-width: 50%;
+	min-width: 600px;
+}
 
 #landing-header {
   z-index: 1;
@@ -9,12 +16,6 @@ body {
   padding-top: 20vh;
 }
 
-#landing-logo {
-	z-index: 2;
-	position: relative;
-	max-width: 50%;
-	min-width: 600px;
-}
 
 #landing-header h3 {
     color: #c7935c;
