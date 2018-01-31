@@ -1,10 +1,10 @@
 //================================
 //VARIABLES
 //================================
-var express = require("express"),
-	flash	= require("connect-flash"),
+var express 		= require("express"),
+	flash			= require("connect-flash"),
 	cookieSession 	= require("cookie-session"),
-	app 	= express();
+	app 			= express();
 
 //================================
 //SET USE IMPORTED PACKAGES
@@ -37,10 +37,12 @@ app.use(function(req, res, next){
 //================================
 //ROUTES
 //================================
-var homeRoutes		= require("./routes/home");
-app.use(homeRoutes);
+//var homeRoutes		= require("./routes/home");
+//app.use(homeRoutes);
 
-
+app.get("/", function(req, res){
+	res.render("home");
+});
 
 
 //comment
