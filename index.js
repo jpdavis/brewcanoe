@@ -3,6 +3,7 @@
 //================================
 var express = require("express"),
 	flash	= require("connect-flash"),
+	cookieSession 	= require("cookie-session"),
 	app 	= express();
 
 //================================
@@ -10,10 +11,14 @@ var express = require("express"),
 //================================
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
-app.use(require("express-session")({
-    secret: "The quick brown fox jumped over the cutest dog in the world.",
-    resave: false,
-    saveUninitialized: false
+
+//================================
+//SET COOKIE-SESSION SETTINGS
+//================================
+app.use(cookieSession({
+	name: "anyOldSessionNameWillDo",
+	keys: "The quick brown fox jumped over the lasagna dog.",
+	maxAge: 300000,
 }));
 
 //================================
