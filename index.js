@@ -4,6 +4,7 @@
 var express 		= require("express"),
 	flash			= require("connect-flash"),
 	cookieSession 	= require("cookie-session"),
+	homeRoutes		= require("./routes/home"),
 	app 			= express();
 
 //================================
@@ -37,12 +38,12 @@ app.use(function(req, res, next){
 //================================
 //ROUTES
 //================================
-//var homeRoutes		= require("./routes/home");
-//app.use(homeRoutes);
 
-app.get("/", function(req, res){
-	res.render("home");
-});
+app.use(homeRoutes);
+
+//app.get("/", function(req, res){
+//	res.render("home");
+//});
 
 
 //comment
