@@ -52,7 +52,7 @@ img {
   background-image: url(../media/landing/landing1.jpeg) 
 }
 .slideshow li:nth-child(2) { 
-  background-image: url(../media/landing/landing2.jpeg);
+  background-image: url(../media/landing/landing2.jpg);
   animation-delay: 10s; 
 }
 .slideshow li:nth-child(3) { 
