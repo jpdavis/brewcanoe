@@ -9,6 +9,17 @@ img {
 	min-width: 600px;
 }
 
+.btn-lg {
+	background-color: #541400;
+	color: #c7935c;
+}
+
+.btn-lg:hover {
+	background-color: #541400;
+	color: #fff;
+	border-color: #fff;
+}
+
 #landing-header {
   z-index: 1;
   position: relative;
@@ -17,8 +28,8 @@ img {
 }
 
 
-#landing-header h3 {
-    color: #c7935c;
+#landing-header h2 {
+    color: #fff;
 	padding-top: 12%;
 }
 
