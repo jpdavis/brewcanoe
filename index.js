@@ -41,9 +41,6 @@ app.use(function(req, res, next){
 
 app.use(homeRoutes);
 
-//app.get("/", function(req, res){
-//	res.render("home");
-//});
 
 
 //comment
